@@ -1,0 +1,11 @@
+.square_white {
+	fill: var(--white);
+}
+
+.square_black {
+	fill: var(--black);
+}
+
+.square_gray {
+	fill: var(--dark-gray);
+}

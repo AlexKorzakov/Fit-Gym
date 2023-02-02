@@ -1,0 +1,145 @@
+.footer {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 88px 70px;
+}
+
+.first_row {
+	display: grid;
+	align-items: center;
+
+	padding: 0 21%;
+
+	background: var(--light-gray);
+	grid-template-columns: auto 1fr auto;
+	grid-template-areas: "logo . navigation";
+}
+
+.footer_ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+
+	padding: 0;
+	gap: 50px;
+}
+
+.footer_ul li {
+	list-style-type: none;
+}
+
+.footer_ul a {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 130%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: var(--black);
+}
+
+.footer_ul a:hover {
+	transition: 0.3s;
+
+	color: var(--ultra-dark-gray);
+}
+
+.logo {
+	grid-area: logo;
+}
+
+.footer_navigation {
+	grid-area: navigation;
+}
+
+.second_row {
+	display: grid;
+
+	align-items: center;
+	align-content: center;
+
+	padding: 29px 21%;
+
+	color: var(--white);
+	background: var(--black);
+	grid-template-columns: auto 1fr auto;
+	grid-template-areas: "title . icons";
+}
+
+.footer_icons svg {
+	fill: var(--white);
+}
+
+.footer_icons svg:hover {
+	transition: 0.3s;
+	fill: var(--over-dark-gray);
+}
+
+.footer_title {
+	display: flex;
+	grid-area: title;
+
+	margin: 0;
+
+	padding: 0;
+	gap: 50px;
+
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 130%;
+}
+
+.footer_icons {
+	grid-area: icons;
+
+	display: flex;
+	gap: 20px;
+}
+
+
+@media screen and (max-width: 1400px) {
+	.footer_logo {
+		display: none;
+	}
+
+	.first_row {
+	grid-template-columns: 1fr;
+	grid-template-areas: 'navigation';
+}
+}
+
+@media screen and (max-width: 1140px) {
+	.footer_ul {
+		gap: 23px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.first_row {
+		display: none;
+	}
+	
+	.footer {
+		grid-template-rows: 70px;
+		margin-top: 30px;
+	}
+
+	.second_row {
+	padding: 29px 5%;
+}
+}
+
+@media screen and (max-width: 430px) {
+	.second_row {
+	padding: 29px 5%;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;
+	grid-template-areas: 'title' 
+						 'icons';
+	gap: 5px;
+	justify-content: center;
+}
+	.footer_icons {
+		justify-content: center;
+	}
+}

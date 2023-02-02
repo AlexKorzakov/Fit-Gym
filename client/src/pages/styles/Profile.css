@@ -1,0 +1,141 @@
+.profile_wrapper {
+	padding: 30px 24%;
+}
+
+.profile_information {
+	display: grid;
+	align-items: center;
+
+	margin: 50px 0;
+	grid-template-columns: 229px 68px auto;
+	grid-template-areas: "logo . profile_info";
+}
+
+.logo {
+	grid-area: logo;
+}
+
+.profile_info {
+	display: grid;
+	grid-area: profile_info;
+	gap: 20px;
+}
+
+.profile_info span {
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	font-weight: 500;
+	line-height: 120%;
+}
+
+.profile_actions {
+	display: flex;
+	gap: 45px;
+
+	margin-bottom: 30px;
+}
+
+.profile_exit_info {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.profile_exit_btn {
+	outline: none;
+	border: none;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+}
+
+.form_password {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 350px;
+}
+
+.input_password {
+	border: none;
+	background-color: var(--black);
+	padding: 7px;
+	border-radius: 5px;
+	color: var(--white);
+}
+
+.label_password {
+	letter-spacing: 0.05em;
+}
+
+.btn_password {
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	background-color: var(--black);
+	color: var(--white);
+	padding: 7px;
+	width: 60%;
+}
+
+@media screen and (max-width: 1280px) {
+	.profile_wrapper {
+		padding: 30px 12%;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.profile_wrapper {
+		padding: 30px 15px;
+	}
+	.profile_information {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.profile_actions {
+		gap: 15px;
+		flex-direction: column;
+	}
+	.profile_information {
+		grid-template-columns: auto auto auto;
+	}
+	.profile_actions button {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.profile_info span {
+		font-size: 14px;
+	}
+	.profile_information svg {
+		width: 130px;
+		height: auto;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	.profile_info span {
+		font-size: 12px;
+		line-height: 150%;
+	}
+	.profile_information svg {
+		width: 130px;
+		height: auto;
+		margin-bottom: 35px;
+	}
+	.profile_information {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+		grid-template-areas: 'logo' 'profile_info';
+		justify-items: center;
+		margin-bottom: 35px;
+	}
+
+}

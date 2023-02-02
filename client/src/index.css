@@ -1,0 +1,160 @@
+
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+span {
+	margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+	min-height: 75vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizespeed;
+
+	line-height: 1.5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Указываем понятную периодичность в потоке данных у article */
+article > * + * {
+	margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+html,
+body {
+	padding: 0;
+
+	color: var(--black);
+
+	background: var(--light-gray);
+
+	font-family: Graphik, sans-serif;
+}
+
+a {
+	text-decoration: none;
+
+	color: inherit;
+}
+
+a:hover {
+	color: inherit;
+}
+
+:root {
+  --black: #333;
+  --light-gray: #EEE;
+  --dark-gray: #C4C4C4;
+  --dark-gray-input: #E5E5E5;
+  --ultra-dark-gray: #626262;
+  --over-dark-gray: #D7D7D7;
+  --white: #EEE;
+  --gold: #926C33;
+  --font-family: "Graphik", sans-serif;
+}
+
+@font-face {
+	font-family: Graphik;
+	src: url("./resources/fonts/GraphikLCG-Light.woff") format("woff");
+
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Graphik;
+	src: url("./resources/fonts/GraphikLCG-Regular.woff") format("woff");
+
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Graphik;
+	src: url("./resources/fonts/GraphikLCG-Medium.woff") format("woff");
+
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Graphik;
+	src: url("./resources/fonts/GraphikLCG-Semibold.woff") format("woff");
+
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Graphik;
+	src: url("./resources/fonts/GraphikLCG-Bold.woff") format("woff");
+
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Graphik;
+	src: url("./resources/fonts/GraphikLCG-Black.woff") format("woff");
+
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Graphik;
+	src: url("./resources/fonts/GraphikLCG-Super.woff") format("woff");
+
+	font-weight: 900;
+	font-style: normal;
+}

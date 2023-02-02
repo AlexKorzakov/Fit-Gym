@@ -1,0 +1,282 @@
+.home h1 {
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 130%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.home p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+}
+
+.home footer {
+	margin-top: 1px;
+}
+
+.home_header {
+	position: absolute;
+	z-index: 1;
+
+	width: 100%;
+}
+
+.home_image_sidebar_block {
+	position: relative;
+}
+
+.home_sidebar {
+	position: fixed;
+	z-index: 1;
+	top: 100%;
+
+	display: flex;
+	align-items: center;
+
+	width: 100%;
+	height: 80px;
+	padding: 0 30px;
+
+	transform: rotate(-90deg);
+	transform-origin: 0% 0%;
+
+	background: var(--light-gray);
+	gap: 650px;
+}
+
+.home_image img {
+	width: 100%;
+}
+
+.home_text_block {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 60%;
+	left: 50%;
+	width: 50%;
+
+	transform: translate(-50%, -50%);
+	text-align: left;
+
+	color: var(--light-gray);
+}
+
+.home_title {
+	text-transform: uppercase;
+}
+
+.home_sub_title {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin: 55px 0 45px 0;
+}
+
+.home_sub_title span {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 0%;
+}
+
+.home_wrapper {
+	padding: 70px 21%;
+}
+
+.home_description_block {
+	display: grid;
+	align-items: start;
+
+	margin-bottom: 48px;
+	padding: 0 91px;
+	grid-template-columns: auto 210px auto;
+	grid-template-areas: "description_logo . description";
+}
+
+.home_description_logo {
+	grid-area: description_logo;
+}
+
+.home_description_logo h2 {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 130%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.home_description {
+	grid-area: description;
+
+	display: grid;
+	gap: 25px;
+}
+
+.home_description span {
+	font-size: 21px;
+	font-weight: 500;
+	line-height: 130%;
+}
+
+.home_paragraph {
+	text-align: justify;
+}
+
+.home_card_row {
+	display: flex;
+	justify-content: space-between;
+	gap: 25px;
+
+	margin-bottom: 40px;
+}
+
+.home_card_row:last-child {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 1920px) {
+	.home_wrapper {
+		padding: 70px 15%;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.home_wrapper {
+		padding: 70px 5%;
+	}
+
+	.home h1 {
+		font-size: 48px;
+	}
+
+	.home_text_block {
+		top: 50%;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.home_wrapper {
+		padding: 70px 10px;
+	}
+	.home h1 {
+		font-size: 36px;
+	}
+
+	.home_text_block {
+		top: 50%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.home_wrapper {
+		padding: 70px 10px;
+	}
+	.home h1 {
+		font-size: 36px;
+	}
+
+	.home_text_block {
+		left: 35%;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.home_sub_title span {
+		line-height: 130%;
+	}
+	.home_sub_title {
+		gap: 10px;
+		margin: 20px 0 25px;
+	}
+	.home_btn_action button {
+		width: 130px;
+	}
+	.home h1 {
+		font-size: 28px;
+	}
+	.home_sub_title span {
+		font-size: 14px;
+	}
+	.home_description_block {
+		grid-template-columns: auto 100px auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.home_btn_action {
+		display: none;
+	}
+	.home_text_block {
+		top: 55%;
+	}
+	.home h1 {
+		font-size: 24px;
+	}
+	.home_description_block {
+		grid-template-columns: auto 20px auto;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.home_sub_title {
+		display: none;
+	}
+	.home h1 {
+		font-size: 28px;
+	}
+	.home_description_block {
+		padding: 0 5px;
+	}
+	.home_description_logo h2 {
+		font-size: 32px;
+	}
+	.home_description span {
+		font-size: 18px;
+	}
+	.home p {
+		font-size: 14px;
+	}
+	.home_wrapper {
+		padding: 35px 10px;
+	}
+	.home_card_row {
+		gap: 10px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.home h1 {
+		font-size: 20px;
+	}
+	.home_description {
+		margin-top: 15px;
+		gap: 15px;
+	}
+	.home_description_block {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+		grid-template-areas: 'description_logo' 'description';
+		margin-bottom: 24px;
+	}
+	.home_description span {
+		text-align: justify;
+	}
+	.home_card_row {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.home_description_logo h2 {
+		font-size: 26px;
+	}
+	.home_description span {
+		font-size: 16px;
+	}
+	.home p {
+		font-size: 12px;
+	}
+}
+

@@ -1,0 +1,477 @@
+.faq_wrapper {
+	display: grid;
+	grid-template-columns: auto 20px 1fr;
+	grid-template-areas: 'sidebar . main';
+	padding: 30px 88px 0px 25px; 
+	/* height: 78vh; */
+}
+
+.faq_sidebar {
+	display: flex;
+	flex-direction: column;
+	grid-area: sidebar;
+}
+
+.faq_main {
+	grid-area: main;
+}
+
+.sidebar_title {
+	display: flex;
+	align-items: center;
+	color: #926c33;
+}
+
+.sidebar_title span {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 130%;
+	margin-left: 16px;
+}
+
+.sidebar_menu {
+	border-left: 1px solid #333;
+	margin: 10px 0 10px 23px;
+	padding: 10px 0;
+}
+
+.menu_firstlevel {
+	margin-left: 40px;
+}
+
+.menu_item {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.menu_item_title {
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 130%;
+}
+
+.menu_secondlevel {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin: 10px 0;
+}
+
+.menu_secondlevel li {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 130%;
+}
+
+.menu_secondlevel li:hover,
+.menu_secondlevel li:focus {
+	color: #926c33;
+	cursor: pointer;
+}
+
+.trainer_card {
+	background-color: var(--black);
+	color: var(--white);
+	padding: 20px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card_first_row {
+	display: grid;
+	grid-template-columns: auto 25px 1fr;
+	grid-template-areas: 'card-image . card-info';
+}
+
+.card_second_row {
+	margin-top: 50px;
+}
+
+.card_second_row_description {
+	background-color: #444;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.faq_card_image {
+	grid-area: card-image;
+}
+
+.faq_card_image img {
+	max-width: 380px;
+	height: auto;
+}
+
+.card_info {
+	grid-area: card-info;
+}
+
+.card_info_header {
+	width: 95%;
+	display: grid;
+	grid-template-columns: auto 200px 1fr;
+	grid-template-areas: 'title . features .';
+	padding-bottom: 30px;
+	border-bottom: 1px solid #eee;
+
+}
+
+.card_info_title {
+	grid-area: title;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 130%;
+}
+
+.card_info_features {
+	grid-area: features;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 60px;
+}
+
+.card_info_item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card_info_item:first-child {
+	gap: 10px;
+}
+
+.card_info_item span:first-child {
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 130%;
+}
+
+.card_info_item span:last-child {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	letter-spacing: 0.05em;
+}
+
+.rating {
+	display: flex;
+	gap: 5px;
+}
+
+.white_icon {
+	fill: var(--dark-gray);
+}
+
+
+.card_info_subdescription {
+	margin-top: 25px;
+	width: 95%;
+}
+
+.card_info_subdescription p{
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 20px;
+	letter-spacing: 0.05em;
+	font-family: var(--font-family);
+}
+
+.card_info_purpose {
+	display: grid;
+	grid-template-columns: auto 250px auto;
+	grid-template-areas: 'col-1 . col-2';
+}
+
+.card_info_purpose_col_1,
+.card_info_purpose_col_2 {
+	display: flex;
+	flex-direction: column;
+	border-left: 1px solid var(--white);
+	padding-left: 15px;
+	margin-top: 50px;
+	gap: 5px;
+}
+
+.card_info_purpose_col_1 span,
+.card_info_purpose_col_2 span {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 20px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.main_ul li {
+	margin-bottom: 5px;
+}
+
+.main_ul li span,
+.main_ul li span {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.card_info_purpose_col_1 {
+	grid-area: col-1;
+}
+
+.card_info_purpose_col_2 {
+	grid-area: col-2;
+}
+
+.card_second_row_description p {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.05em;
+}
+
+.spot_active {
+	color:#926c33;
+}
+
+.trainer_information {
+	margin-top: 50px;
+}
+
+.trainer_information p {
+	/* margin: 30px 0 15px; */
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+
+.trainer_information h2 {
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 130%;
+	margin-bottom: 15px;
+}
+
+.trainer_rules_efficiency .efficiency {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 130%;
+}
+
+.efficiency_depends {
+	margin: 15px 0;
+}
+
+.sub_ul {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.faq_nav_icon {
+	display: none;
+}
+
+.plug {
+	height: 75vh;
+}
+
+@media screen and (max-width: 1920px) {
+	.card_info_item span:first-child {
+		font-size: 22px;
+	}
+	.card_info_item:first-child {
+		gap: 3px;
+	}
+	.card_info_header {
+		grid-template-columns: auto 1fr auto;
+	}
+	.card_info_purpose {
+		grid-template-columns: 1fr 135px 1fr;
+	}
+	.faq_card_image {
+		justify-content: center;
+	}
+	.faq_card_image img {
+		width: auto;
+		height: 100%;
+	}
+
+}
+
+@media screen and (max-width: 1700px) {
+	.card_info_features {
+		margin-top: 15px;
+		justify-content: flex-start;
+	}
+	.card_info_header {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+		grid-template-areas: 'title'
+							 'features';
+		padding-bottom: 15px;
+	}
+	.card_info_purpose {
+		grid-template-columns: auto auto auto;
+	}
+	.card_info_purpose_col_1, .card_info_purpose_col_2 {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 1550px) {
+	.faq_wrapper {
+		padding: 30px 5px 0px 5px;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.card_info_subdescription p {
+		font-size: 18px;
+	}
+	.card_info_purpose_col_1 span, .card_info_purpose_col_2 span {
+		font-size: 16px;
+		margin-bottom: 0;
+	}
+	.main_ul li {
+		margin-bottom: 0;
+	}
+	.main_ul li span, .main_ul li span {
+		font-size: 14px;
+	}
+	.faq_card_image {
+		justify-content: center;
+	}
+	.card_info_item span:first-child {
+		font-size: 20px;
+	}
+	.card_info_features {
+		gap: 30px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.faq_card_image img{
+		width: 100%;
+		height: auto;
+	}
+	.faq_card_image {
+		display: flex;
+		justify-content: center;
+	}
+	.card_info_header {
+		display: grid;
+		justify-items: center;
+	}
+	.card_second_row_description p {
+		font-size: 18px;
+	}
+	.card_first_row {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+		grid-template-areas: 'card-image'
+							 'card-info';
+	}
+	.card_info {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.menu_firstlevel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+	right: 110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .menu_firstlevel.active {
+	display: flex;
+	align-items: center;
+    background: #eee;
+    right: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    padding: 5px 0;
+  }
+
+  .menu_firstlevel.active {
+	  margin-top: 30px;
+  }
+
+  .menu_secondlevel {
+	  align-items: center;
+  }
+
+  .faq_nav_icon {
+    display: block;
+    position: absolute;
+    top: 47px;
+    left: 45px;
+    transform: translate(-100%, 60%);
+    cursor: pointer;
+	z-index: 2;
+  }
+
+  .sidebar_title {
+	  display: none;
+  }
+  .sidebar_menu {
+	  border: none;
+  }
+  .card_info_header {
+	  width: 100%;
+  }
+  .trainer_card {
+	  padding: 15px;
+  }
+  .card_info_features {
+	  flex-direction: column;
+	  gap: 10px;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+	.card_info_subdescription p, 
+	.card_second_row_description p {
+		text-align: justify;
+	}
+	.card_info_purpose {
+		display: flex;
+		flex-direction: column;
+	}
+	.card_second_row_description {
+		padding: 8px;
+	}
+	.card_second_row {
+		margin-top: 20px;
+	}
+	.trainer_information {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.faq_wrapper {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+		grid-template-areas: 'sidebar'
+								'main';
+	}
+}

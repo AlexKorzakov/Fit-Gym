@@ -1,0 +1,38 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 14px 22px;
+
+	cursor: pointer;
+
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	border: none;
+
+	font-size: 16px;
+	font-weight: 300;
+	transition: all ease .4s;
+	/* width: 168px; */
+}
+
+.black {
+	color: var(--white);
+	background-color: var(--black);
+}
+
+.white {
+	color: var(--black);
+	background-color: var(--white);
+}
+
+.black:hover {
+	background-color: rgb(71, 67, 67);
+}
+
+.white:hover {
+	background-color: rgb(186, 181, 181);
+}

@@ -1,0 +1,175 @@
+.schedule_wrapper {
+	padding: 80px 11% 20px;
+}
+
+.schedule {
+	display: grid;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.schedule_time {
+	display: grid;
+	gap: 2px;
+	grid-template-columns: 120px repeat(9,150px);
+}
+
+.schedule_time_item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 65px;
+	background: var(--black);
+	color: var(--white);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 130%;
+
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.row_training {
+	display: grid;
+	gap: 2px;
+	margin-top: 2px;
+	grid-template-columns: 120px repeat(9,150px);
+	align-items: center;
+}
+
+.row_training_day {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid var(--black);
+	height: 80px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 130%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.item_active {
+	display: flex;
+	flex-direction: column;
+	background: var(--over-dark-gray);
+	border: 1px solid var(--black);
+	height: auto;
+}
+
+.row_training_item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid var(--black);
+	min-height: 80px;
+	padding: 3px;
+	gap: 5px;
+}
+
+.row_training_item span {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+}
+
+.row_training_item span:first-child {
+	font-weight: 500;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 1700px) {
+	.schedule_wrapper {
+		padding: 80px 2% 20px;
+	}
+
+	.schedule_time {
+		grid-template-columns: 1fr repeat(9,1fr);
+		justify-content: center;
+	}
+
+	.row_training {
+		grid-template-columns: 1fr repeat(9,1fr);
+	}
+
+	.row_training_item span:first-child {
+		font-weight: 500;
+		font-size: 16px;
+	}
+
+	.row_training_item {
+		height: 100px;
+	}
+
+	.row_training_day {
+		height: 100px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.row_training_item span:first-child {
+		font-weight: 500;
+		font-size: 14px;
+	}
+
+	.row_training_item span {
+		font-weight: 400;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.schedule_wrapper {
+		padding: 20px 2%;
+		min-height: 75vh;
+	}
+
+	.schedule_time {
+		display: none;
+	}
+
+	.schedule {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.row_training {
+		grid-template-columns: 1fr;
+	}
+
+	.row_training_day {
+		justify-content: start;
+		height: auto;
+		border: none;
+	}
+
+	.item_active {
+		height: auto;
+		border-radius: 5px;
+		background: var(--white);
+		gap: 10px;
+		text-transform: uppercase;
+		padding: 5px;
+	}
+
+	.row_training_item span:first-child {
+		font-weight: 400;
+	}
+	
+	.row_training_item {
+		margin-top: 5px;
+	}
+
+	.row_training_day {
+		margin-top: 10px;
+		font-weight: 600;
+		font-size: 14px;
+	}
+}
+
+
+
+
+

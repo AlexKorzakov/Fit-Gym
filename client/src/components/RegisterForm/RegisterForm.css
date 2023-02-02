@@ -1,0 +1,128 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	color: var(--white);
+	background: var(--black);
+}
+
+.container {
+	padding: 0 270px;
+}
+
+.info_block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0;
+	text-transform: uppercase;
+}
+
+.title {
+	margin: 30px 0;
+
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	line-height: 130%;
+}
+
+.register_info_text {
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 130%;
+	letter-spacing: 0.05em;
+}
+
+.input_block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 40px;
+}
+
+.form_item {
+	position: relative;
+
+	display: inline-block;
+
+	vertical-align: top;
+}
+
+.form_input {
+	width: 100%;
+	font-family: var(--font-family);
+	padding-bottom: 5px;
+	color: var(--white);
+	border: none;
+	border-bottom: 1px solid var(--white);
+	outline: none;
+	background: var(--black);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 130%;
+}
+
+.form_label {
+	position: absolute;
+	top: -10px;
+	right: 0;
+	left: 0;
+
+	overflow: hidden;
+
+	transition: 0.3s;
+	white-space: nowrap;
+	pointer-events: none;
+
+	font-family: var(--font-family);
+	font-weight: 400;
+	line-height: 40px;
+}
+
+.form_input:focus~.form_label,
+.form_input:not(:focus):valid~.form_label {
+	top: -27px;
+	left: 2px;
+
+	font-size: 10px;
+}
+
+.register_auth_confirm_block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	margin: 70px 0 30px 0;
+}
+
+@media screen and (max-width: 650px) {
+	.register_auth_confirm_block button {
+		width: 120px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.register_info_text {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.register_auth_confirm_block {
+		flex-direction: column;
+		gap: 15px;
+		margin: 30px 0;
+	}
+	.register_auth_confirm_block button {
+		width: 150px;
+	}
+	.register_info_text {
+		font-size: 20px;
+	}
+	.info_block {
+		text-align: center;
+	}
+	.form_label {
+		font-size: 14px;
+	}
+}
