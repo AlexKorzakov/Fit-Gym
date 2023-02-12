@@ -1,6 +1,4 @@
-/client/.env
 /client/node_modules
-/server/.env
 /server/database.sql
 /server/old_DB.js
 /server/node_modules
